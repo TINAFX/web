@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+      <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+	html, body ,ul ,p ,h3{
+		padding: 0;
+		margin: 0;
+	}
+    html,body {
+        background-color: #efefef;
+    }
+	ul {
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	.logo {
+		border: 1px solid #fed441;
+		
+		background: #fed441;
+		}
+     .logo>div {
+		float: left;
+		
+	    }
+	
+	.left img {
+		padding: 10px 10px 0 200px;
+	}
+	
+	
+     .middle ul li {
+    	float: left;
+    	padding: 0 30px;
+        line-height: 83px;
+
+    }
+    .middle ul li a {
+    	color: black;
+    	font-size: 18px;
+    }
+    .middle ul li:hover{
+    	background: #f7e487;
+        /*border-bottom:2px solid black; */
+    }
+    .middle ul li:nth-child(1) {
+        border-bottom: 4px solid black;
+        background-color: #f7e487;
+        line-height:79px;
+    }
+    .right a {
+           color: black;
+           font-size: 18px;
+           position: relative;
+           top: 30px;
+           left:70px;
+    }
+    .content>div {
+    	float: left;
+    }
+    .content {
+    	margin:0 auto;
+    	width: 960px;
+    	/*border: 1px solid #dedede;*/
+    	/*height:2000px;*/
+        margin-top: 16px;
+    }
+    .two>div{
+        float: left;
+    }
+    .author>div {
+    	float: left;
+    }
+     .author{
+    	/*height:2000px;*/
+    	width:640px;
+
+    	
+    }
+    .info>div {
+        float:left;
+    }
+   /* .info {
+        position: relative;
+    }*/
+    .info .age {
+        width: 30px;
+        height: 18px;
+        position: relative;
+        left: 15px;
+        top: 12px;
+        background-image: url(C:\Users\lenovo\Desktop\tupian\qiushi.png);
+        /*display: inline-block;*/
+    }
+    .age span {
+    
+        position: absolute;
+         margin-left: -15px;
+         display: inline-block;
+    }
+    .two{
+        /*margin-top: 20px;*/
+        background-color: #fff;
+        padding: 18px 20px;
+        margin-top: 15px;
+    }
+    /*.two img {
+    	margin: 20px 0 0 20px;
+    }*/
+    .name a {
+    	position: relative;
+    	left: 10px;
+    	top: 10px;
+    	color: #999;
+    }
+    .name  a:hover {
+    color: black;
+    }
+    .author-content a  {
+    	color: #333;
+    	position: relative;
+    	top:8px;
+    	font-size: 16px;
+    	line-height: 30px;
+
+    }
+    .laugh>div{
+    	float: left;
+    }
+    .laugh p{
+        position: relative;
+        top: 20px;
+        color: #999;
+    }
+    .laugh a {
+     color: #999;
+     position: relative;
+     top: 20px;
+     left: 10px;
+    }
+    .laugh  :hover a {
+    	color: black
+    }
+    .photo img {
+    	/*position: relative;
+    	top: 20px;*/
+        margin:20px 0 10px;
+    }
+    .view>div{         /*评论*/
+    	float: left;
+    }
+    .observer a   /*评论者*/{
+    	position: relative;
+    	top: 10px;
+    	/*left: 5px;*/
+
+    	font-size: 15px;
+    	color: #333;
+    }
+    .view img{
+    	position: relative;
+    	top: 15px;
+       /* right: 5px;*/
+    }
+    
+    .list {
+    	width:264px;
+    	/*border: 1px solid #dedede;
+*/    	height: 2200px;
+        margin-left: 16px;
+
+    }
+    .list-one img {
+         padding: 10px;
+
+    }
+    .adv img {
+        margin-top: 7px;
+    }
+    .tip h3 {
+        color: #6a3906;
+        font-weight: bold;
+        font-size: 16px;
+        margin :20px 0 0 15px;
+    }
+    .tip img {
+        margin:10px 0 0 15px
+    }
+    .list-two ul li {
+        float: left;
+        padding: 30px 10px 0 24px;
+     }
+     .list-two ul li a {
+        color:#6a3906;
+        font-weight: bold; 
+     }
+     .list-two ul li :hover {
+        border-bottom: 1px solid #6a3906;
+     }
+  /*  .list-two ul li:nth-child(1){
+        border-bottom: 1px solid #6a3906
+    }*/
+     .list-three ul li a {
+        font-size: 14px;
+        color: #6a5c4e;
+        margin-left: 15px;
+        line-height: 30px;
+        position: relative;
+        top: 5px;
+     }
+     .list-three ul :hover a {
+        color: black;
+     }
+     .advone {
+        margin-top: 30px;
+     }
+    .bottom {
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+    .advtwo {
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+    .base>div {
+       float: left;
+    }
+    .base {
+        list-style: none;
+        
+    } 
+    .base {
+       margin-left:200px;
+       margin-top: 20px;
+    }
+    .base-two, .base-three, .base-four, .base-five {
+        margin-left: 110px;
+    }
+    .base p {
+        font-size: 20px;
+    }
+    .base a {
+        color: #6a5c4e;
+        font-size: 15px;
+       position: relative;
+       top: 5px;
+    }
+    .base  li:hover a  {
+        color: black;
+    }
+    .line {
+        border: 1px solid #efefef;
+        width: 800px;
+        margin-left: 200px;
+        margin-top: 30px;
+    }
+    .end {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .end p, .end a {
+        font-size: 12px;
+        color: black;
+        padding: 5px;
+    }
+    .clearfix::after {
+    	height:0;
+    	content: "";
+    	display: block;
+    	clear:both;
+    }
+</style>
+</head>
+<body>
+<div class="logo clearfix">
+<div class="left"><img src="C:\Users\lenovo\Desktop\tupian\qiushi.png" alt=""></div>
+   <div class="middle clearfix">
+   	<ul >
+		
+		<li><a href="">热门</a></li>
+		<li><a href="">24小时</a></li>
+		<li><a href="">热图</a></li>
+		<li><a href="">文字</a></li>
+		<li><a href="">穿越</a></li>
+		<li><a href="">糗事</a></li>
+		<li><a href="">新闻</a></li>
+		<li><a href="">投稿</a></li></ul>
+   </div>
+   <div class="right"><a href="">登录</a></div>
+<!-- </span> -->
+</div>
+ <div class="content clearfix">
+ 	<div class="author clearfix">
+ 	    <div class="two clearfix">
+                <div class="info">
+                   <div>
+                 <a href=""><img src="C:\Users\lenovo\Desktop\tupian\zuo.png" alt=""></a>
+            </div>
+            <div class="name">
+                 <a href="">aa乐</a>
+            </div> 
+               <div>
+                   <img  class="age"
+                   src="C:\Users\lenovo\Desktop\nv.png" alt="">
+                   <span>
+                       21
+                   </span>
+               </div>
+                </div>
+           <!--  <div>
+                <img src="C:\Users\lenovo\Desktop\tupian\nv.png" alt="">
+            </div> -->
+            <div class="author-content">
+                 <a herf="">还记得小时侯在农村第一次吃西瓜，老爸把西瓜买回来了有事出去了，然后我和弟弟，外婆迫不及待的想吃西瓜，怎么吃呢？外婆把外面的皮削掉，划开西瓜，然后我们三个班着西瓜皮啃，爸爸回来了，只能吃我们啃剩下的瓜瓤
+                   </a>
+             </div>
+             <div class="laugh clearfix">
+                     <div><p>862好笑</p></div>
+                     <div><a href="">30评论</a></div>
+             </div>
+             <div class="photo">
+                 <a href=""><img src="C:\Users\lenovo\Desktop\tupian\qq.png" alt=""></a>
+              </div>
+             <div class="view">
+                <div><a href=""><img src="C:\Users\lenovo\Desktop\tupian\shen.png" alt=""></a></div>
+                <div class="observer"><a href="">扯蛋，农村人竟然没见过西瓜，我就呵呵了</a></div>
+                <div><a href=""><img src="C:\Users\lenovo\Desktop\tupian\zan.png" alt=""></a></div>
+             </div>
+            </div>
+            <div class="two clearfix">
+                <div>
+                 <a href=""><img src="C:\Users\lenovo\Desktop\tupian\1.png" alt=""></a>
+            </div>
+            <div class="name">
+                 <a href="">挖鼻孔的老虎</a>
+            </div>
+            <div class="author-content">
+                 <a href="">昨天帮对门的妹子收了快递，今天拿给她。
+她开门接过，正客气着，我看她身后的门要被风带上了，连忙伸手去挡，但没来得及，门还是被关上了。
+就在这当口，老婆买菜回来，看到我单手撑着门在壁咚那妹子。
+
+                   </a>
+             </div>
+             <div class="laugh clearfix">
+                     <div><p>862好笑</p></div>
+                     <div><a href="">30评论</a></div>
+             </div>
+             <div class="photo">
+                 <a href=""><img src="C:\Users\lenovo\Desktop\tupian\qq.png" alt=""></a>
+              </div>
+             <div class="view">
+                <div><a href=""><img src="C:\Users\lenovo\Desktop\tupian\shen.png" alt=""></a></div>
+                <div class="observer"><a href="">裤子都脱了你还解释啥</a></div>
+                <div><a href=""><img src="C:\Users\lenovo\Desktop\tupian\zan.png" alt=""></a></div>
+             </div>
+            </div>
+            <div class="two clearfix">
+                <div>
+                 <a href=""><img src="C:\Users\lenovo\Desktop\tupian\2.png" alt=""></a>
+            </div>
+            <div class="name">
+                 <a href="">甜甜甜</a>
+            </div>
+            <div>
+                
+            </div>
+            <div class="author-content">
+                 <a href="">下班后我经常去闺蜜理发店玩，前段时间来个帅哥，闺蜜要我帮他洗头，洗头时帅哥一直盯着我的胸看，看的我脸都火辣辣的！帅哥还时不时的给我放电！昨天这帅哥又来了，我刚要帮他洗头，他冷冷的说，你不专业，要理发师洗！
+我心想，男人果然善变！帅哥理发完正在付钱时，有人在门外喊他，我顺着声音看去，妈呀，竟是给我放电的那个帅哥！竟然和店内的帅哥一模一样，原来是双胞胎兄弟！
+
+                   </a>
+             </div>
+             <div class="laugh clearfix">
+                     <div><p>862好笑</p></div>
+                     <div><a href="">30评论</a></div>
+             </div>
+             <div class="photo">
+                 <a href=""><img src="C:\Users\lenovo\Desktop\tupian\qq.png" alt=""></a>
+              </div>
+             <div class="view">
+                <div><a href=""><img src="C:\Users\lenovo\Desktop\tupian\shen.png" alt=""></a></div>
+                <div class="observer"><a href="">山有多高，胸怀就有多广</a></div>
+                <div><a href=""><img src="C:\Users\lenovo\Desktop\tupian\zan.png" alt=""></a></div>
+             </div>
+            </div>
+             <div class="two clearfix">
+                <div>
+                 <a href=""><img src="C:\Users\lenovo\Desktop\tupian\3.png" alt=""></a>
+            </div>
+            <div class="name">
+                 <a href="">看着激动其实鸡动</a>
+            </div>
+            <div class="author-content">
+                 <a href="">这世上能让你自己搧自己脸的不是你老婆，也不是你父母，而是它
+                    <img src="C:\Users\lenovo\Desktop\tupian\shanpao.jpg" alt="">
+
+                   </a>
+             </div>
+             <div class="laugh clearfix">
+                     <div><p>862好笑</p></div>
+                     <div><a href="">30评论</a></div>
+             </div>
+             <div class="photo">
+                 <a href=""><img src="C:\Users\lenovo\Desktop\tupian\qq.png" alt=""></a>
+              </div>
+             <div class="view">
+                <div><a href=""><img src="C:\Users\lenovo\Desktop\tupian\shen.png" alt=""></a></div>
+                <div class="observer"><a href="">山有多高，胸怀就有多广</a></div>
+                <div><a href=""><img src="C:\Users\lenovo\Desktop\tupian\zan.png" alt=""></a></div>
+             </div>
+            </div>
+          
+             
+ 	</div>
+ 	<div class="list">
+ 		<div class="list-one">
+             <a href="">
+                 <img src="C:\Users\lenovo\Desktop\tupian\jubao.png" alt="">
+             </a>     
+        </div>
+        <div class="adv">
+            <a href="">
+               <img src="C:\Users\lenovo\Desktop\tupian\adv.png" alt="">
+            </a>
+            <img src="C:\Users\lenovo\Desktop\tupian\tip.png" alt="">
+        </div>
+        <div class="tip">
+          <h3>
+              爆笑糗事精选
+          </h3> 
+          <a href=""><img src="C:\Users\lenovo\Desktop\tupian\xiaohua.png" alt=""></a> 
+        </div>
+        <div class="list-two">
+            <ul>
+                <li>
+                    <a href="">热门</a>
+                </li>
+                <li>
+                    <a href="">话题</a>
+                </li>
+                <li>
+                    <a href="">专区</a>
+                </li>
+                <li>
+                    <a href="">推荐</a>
+                </li>
+            </ul>
+            <!-- <a href="">
+            <img src="C:\Users\lenovo\Desktop\tupian\xian.png" alt=""> -->
+            <!-- </a>
+ -->        </div>
+        <div class="list-three">
+           <ul>
+            <li><a href="">#关于生活需要诚信的名言有哪些#</a></li> 
+            <li><a href="">#关于亲情的作文800字迅雷下载#</a></li> 
+            <li><a href="">#关于亲情的作文高中记叙文#</a></li> 
+            <li><a href="">#关于古诗的读书小报#</a></li>
+            <li><a href="">#关于折花的讽刺诗句#</a></li>
+            <li> <a href="">#日本有关于狗的电影叫什么名字#</a></li>
+            <li><a href="">#关于动物变异类电影大全#</a></li> 
+            <li><a href="">#印度关于蛇女的电影#</a></li> 
+            <li><a href="">#关于最新的人狗电影叫什么#</a></li> 
+            <li><a href="">#关于读书长一点的古诗#</a></li>
+          </ul> 
+        </div>
+        <div class="advone">
+            <a href="">
+                <img src="C:\Users\lenovo\Desktop\tupian\adv1.png" alt="">
+            </a>
+        </div>
+ 	</div>
+ </div>
+ <div  class="bottom">
+                <a href=""><img src="C:\Users\lenovo\Desktop\tupian\yeshu.png" alt=""></a>
+ </div>	
+ <div class="advtwo">
+     <a href="">
+         <img src="C:\Users\lenovo\Desktop\tupian\6.png" alt="">
+     </a>
+ </div>
+ <div class="base clearfix" >
+    <div base-one>
+        <li><p>关于</p></li>
+        <li><a href="">关于糗百</a></li>
+        <li><a href="">加入我们</a></li>
+        <li><a href="">联系方式</a></li>
+     </div>
+     <div class="base-two">
+        <li><p>帮助</p></li>
+        <li><a href="">在线反馈</a></li>
+        <li><a href="">用户协议</a></li>
+        <li><a href="">隐私政策</a></li>
+     </div>
+     <div class="base-three">
+        <li><p>下载</p></li>
+        <li><a href="">Andriod客户端</a></li>
+        <li><a href="">iphone客户端</a></li>
+        
+     </div>
+     <div class="base-four">
+        <li><p>关注</p></li>
+        <li><a href="">微信</a></li>
+        <li><a href="">新浪微博</a></li>
+        <li><a href="">QQ空间</a></li>
+     </div>
+     <div class="base-five">
+        <li><p>组织</p></li>
+        <li><a href="">网站反馈群</a></li>
+        <li><a href="">官方粉丝群</a></li>
+     </div>
+     
+ </div>
+  <div class="line">
+      
+  </div>
+ <div class="end">
+     <p>
+      互联网ICP备案：京ICP备14028348号-1 广播电视节目制作经营许可证：（京）字第08319号 网络文化经营许可证：京网文[2017]2369-247号
+      </p>
+     <p>
+         电信与信息服务业务经营许可证：京ICP证140448号 计算机信息网络国际联网单位备案：
+         <span>
+            <a href=""><img src="C:\Users\lenovo\Desktop\tupian\jing.png" alt="">京公网安备11010502031601号</a> 
+         </span>
+     </p>
+      <p>
+         友际无限（北京）科技有限公司 违法和不良信息举报电话：010-84872896 邮箱：kefu@qiushibaike.com
+      </p>
+      <p>
+          © Qiushibaike.com 糗事百科版权所有
+      </p>
+ </div>
+ <script type="text/javascript">
+// //     alert(111111);
+// // //         console.log(2222222);
+// // //         var baoma1 = "car";
+// // // //        console.log(baoma1);
+// // //         alert(baoma1);
+// //    var num="1234"
+// //    console,log (num)
+//    var car="baoma"
+//    console .log (car)
+  $(function(){
+            var leftItem = $(".two");
+            leftItem.click(function(){
+                alert(123);
+            })
+        })
+
+ </script>
+</body>
+</html>
